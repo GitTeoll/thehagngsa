@@ -82,8 +82,8 @@ class MyApp extends StatelessWidget {
           currentIndex: _currentIndex,
           showUnselectedLabels: true,
           onTap: _onTabTapped,
-          selectedItemColor: Colors.blue, // 선택된 아이템 색상
-          unselectedItemColor: Colors.grey, // 선택되지 않은 아이템 색상
+          selectedItemColor: Colors.blue,
+          unselectedItemColor: Colors.grey,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
@@ -99,12 +99,12 @@ class MyApp extends StatelessWidget {
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.person_2_outlined),
-              label: "My",
+              label: 'My',
             ),
           ],
-          selectedLabelStyle: const TextStyle(fontSize: 12), // 선택된 아이템의 폰트 크기
-          unselectedLabelStyle:
-              const TextStyle(fontSize: 12), // 선택되지 않은 아이템의 폰트 크기
+          selectedLabelStyle: const TextStyle(fontSize: 12),
+          unselectedLabelStyle: const TextStyle(fontSize: 12),
+          type: BottomNavigationBarType.fixed, // 고정 크기 사용
         ),
       ),
     );
