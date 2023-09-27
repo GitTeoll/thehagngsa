@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
           currentIndex: _currentIndex,
           showUnselectedLabels: true,
           onTap: _onTabTapped,
-          selectedItemColor: Colors.blue,
+          selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
