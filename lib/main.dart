@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'WIdgets/event_widget.dart';
+import 'widget/event_widget.dart';
 
 void main() {
   runApp(const MyApp());

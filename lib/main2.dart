@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 
-import 'WIdgets/event_container_card.dart';
-import 'WIdgets/event_widget.dart';
-import 'WIdgets/top_thehangsa.dart';
+import 'widget/event_container_card.dart';
+import 'widget/event_widget.dart';
+import 'widget/top_thehangsa.dart';
 
 void main() {
   runApp(MyApp());
