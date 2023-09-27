@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thehangsa/screen/event_list_screen.dart';
 import 'package:thehangsa/screen/home_screen.dart';
+import 'package:thehangsa/const/colors.dart';
 
 class RootTab extends StatefulWidget {
   const RootTab({super.key});
@@ -43,9 +44,10 @@ class _RootTabState extends State<RootTab> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8F8F8),
+      backgroundColor: kBackgroundColor,
       body: TabBarView(
         controller: _tabController,
+        physics: const NeverScrollableScrollPhysics(),
         children: const [
           HomeScreen(),
           EventListScreen(),
@@ -61,8 +63,8 @@ class _RootTabState extends State<RootTab> with SingleTickerProviderStateMixin {
         onTap: (int index) {
           _tabController.animateTo(index);
         },
-        selectedItemColor: Colors.blue, // 선택된 아이템 색상
-        unselectedItemColor: Colors.grey, // 선택되지 않은 아이템 색상
+        selectedItemColor: kPrimaryDarkColor, // 선택된 아이템 색상
+        unselectedItemColor: kPrimaryDarkColor, // 선택되지 않은 아이템 색상
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

@@ -36,7 +36,9 @@ class EventWidget extends StatelessWidget {
                   child: Text(
                     "신규가입 10% 할인쿠폰 증정 이벤트",
                     style: TextStyle(
-                        color: Color(0xFFFFFFFF), fontSize: 20),
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 20,
+                    ),
                   ),
                 )
               ],
