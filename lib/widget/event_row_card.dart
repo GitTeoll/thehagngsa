@@ -1,8 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:thehangsa/model/event_model.dart';
 
 class RowEventCard extends StatelessWidget {
-  final String img, eventname, price;
+  final String img;
+  final String eventname;
+  final int price;
 
   const RowEventCard({
     Key? key, // Add Key? key parameter
@@ -10,6 +13,14 @@ class RowEventCard extends StatelessWidget {
     required this.eventname,
     required this.price,
   }) : super(key: key); // Add constructor body and super call
+
+  factory RowEventCard.fromModel({required EventModel model}) {
+    return RowEventCard(
+      img: model.imgUrl,
+      eventname: model.title,
+      price: model.price,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +74,7 @@ class RowEventCard extends StatelessWidget {
                             Row(
                               children: [
                                 Text(
-                                  price,
+                                  '$price',
                                   style: const TextStyle(
                                       color: Color(0xFF3E3E40),
                                       fontSize: 13,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thehangsa/widget/event_row_card.dart';
+import 'package:thehangsa/component/event_list.dart';
 
 class EventListScreen extends StatelessWidget {
   const EventListScreen({super.key});
@@ -32,25 +32,7 @@ class EventListScreen extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.fromLTRB(25, 0, 25, 15),
-            child: Column(
-              children: [
-                RowEventCard(
-                  img: 'assets/images/major.jpg',
-                  eventname: "메이저리그 체육대회",
-                  price: "150만 원",
-                ),
-                RowEventCard(
-                  img: 'assets/images/minor.jpg',
-                  eventname: "마이너리그 체육대회",
-                  price: "150만 원",
-                ),
-                RowEventCard(
-                  img: 'assets/images/zaerong.jpg',
-                  eventname: "대형 재롱잔치",
-                  price: "150만 원",
-                ),
-              ],
-            ),
+            child: EventList(),
           ),
         ],
       ),
