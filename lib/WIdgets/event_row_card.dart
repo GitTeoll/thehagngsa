@@ -1,10 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
-class rowEventCard extends StatelessWidget {
+class RowEventCard extends StatelessWidget {
   final String img, eventname, price;
 
-  const rowEventCard({
+  const RowEventCard({
     Key? key, // Add Key? key parameter
     required this.img,
     required this.eventname,

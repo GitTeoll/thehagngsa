@@ -3,15 +3,19 @@ import 'package:flutter/material.dart';
 import 'WIdgets/event_widget.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
 
-  int _currentIndex = 0; // 현재 선택된 탭 인덱스
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
 
-  // 탭이 선택될 때 호출되는 함수
+class _MyAppState extends State<MyApp> {
+  int _currentIndex = 0; 
+ // 현재 선택된 탭 인덱스
   void _onTabTapped(int index) {
     // 탭이 선택되면 _currentIndex를 업데이트하여 현재 선택된 탭을 변경합니다.
     _currentIndex = index;
@@ -32,15 +36,15 @@ class MyApp extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         SizedBox(
                           height: 40,
                         ),
                       ],
                     ),
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Text(
                           "더행사",
                           style: TextStyle(
@@ -50,8 +54,8 @@ class MyApp extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         SizedBox(
                           height: 30,
                         ),
@@ -62,10 +66,10 @@ class MyApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         color: const Color(0xFF484848),
                       ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
+                      child: const Padding(
+                        padding: EdgeInsets.all(10),
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               "공지",
                               style: TextStyle(
@@ -99,10 +103,10 @@ class MyApp extends StatelessWidget {
                     const SizedBox(
                       height: 30,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Row(
-                        children: const [
+                        children: [
                           Text(
                             " 행사 세트",
                             style: TextStyle(
@@ -141,8 +145,8 @@ class MyApp extends StatelessWidget {
                                         color: const Color(0xFFD9D9D9),
                                         borderRadius: BorderRadius.circular(10)),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                                     child: Row(
                                       children: [
                                         Column(
@@ -152,7 +156,7 @@ class MyApp extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "메이저리그 체육대회",
                                                   style: TextStyle(
@@ -162,11 +166,11 @@ class MyApp extends StatelessWidget {
                                                 )
                                               ],
                                             ),
-                                            const SizedBox(
+                                            SizedBox(
                                               height: 4,
                                             ),
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "150만 원",
                                                   style: TextStyle(
@@ -184,11 +188,11 @@ class MyApp extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                            const Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
+                                children: [
                                   Icon(Icons.arrow_forward_ios_rounded)
                                 ],
                               ),
@@ -225,8 +229,8 @@ class MyApp extends StatelessWidget {
                                         color: const Color(0xFFD9D9D9),
                                         borderRadius: BorderRadius.circular(10)),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                                     child: Row(
                                       children: [
                                         Column(
@@ -236,7 +240,7 @@ class MyApp extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "마이너리그 체육대회",
                                                   style: TextStyle(
@@ -246,11 +250,11 @@ class MyApp extends StatelessWidget {
                                                 )
                                               ],
                                             ),
-                                            const SizedBox(
+                                            SizedBox(
                                               height: 4,
                                             ),
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "150만 원",
                                                   style: TextStyle(
@@ -268,11 +272,11 @@ class MyApp extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                            const Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
+                                children: [
                                   Icon(Icons.arrow_forward_ios_rounded)
                                 ],
                               ),
@@ -309,8 +313,8 @@ class MyApp extends StatelessWidget {
                                         color: const Color(0xFFD9D9D9),
                                         borderRadius: BorderRadius.circular(10)),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                                     child: Row(
                                       children: [
                                         Column(
@@ -320,7 +324,7 @@ class MyApp extends StatelessWidget {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "대형 재롱잔치",
                                                   style: TextStyle(
@@ -330,11 +334,11 @@ class MyApp extends StatelessWidget {
                                                 )
                                               ],
                                             ),
-                                            const SizedBox(
+                                            SizedBox(
                                               height: 4,
                                             ),
                                             Row(
-                                              children: const [
+                                              children: [
                                                 Text(
                                                   "150만 원",
                                                   style: TextStyle(
@@ -352,11 +356,11 @@ class MyApp extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+                            const Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.center,
-                                children: const [
+                                children: [
                                   Icon(Icons.arrow_forward_ios_rounded)
                                 ],
                               ),

@@ -14,8 +14,8 @@ class EventWidget extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(32, 32, 32, 10),
         child: Column(
           children: [
-            Row(
-              children: const [
+            const Row(
+              children: [
                 Text(
                   " 더행사 첫 이벤트",
                   style: TextStyle(
@@ -28,8 +28,8 @@ class EventWidget extends StatelessWidget {
             const SizedBox(
               height: 8,
             ),
-            Row(
-              children: const [
+            const Row(
+              children: [
                 SizedBox(
                   width: 200,
                   height: 68,
