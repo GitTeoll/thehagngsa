@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'WIdgets/event_row_card.dart';
+import 'widgets/event_row_card.dart';
 
 void main() {
   runApp(MyApp());
