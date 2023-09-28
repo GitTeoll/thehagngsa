@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class TopThehangsa extends StatelessWidget {
   const TopThehangsa({
@@ -7,6 +8,11 @@ class TopThehangsa extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Color(0xFF2F2F2F),
+      statusBarBrightness: Brightness.light, // 텍스트의 밝기 설정 (예: 검은색 아이콘 및 흰색 텍스트)
+      statusBarIconBrightness: Brightness.light, // 아이콘의 밝기 설정 (예: 검은색 아이콘)
+    ));
     return Container(
       padding: const EdgeInsets.all(20),
       height: 200,
@@ -14,10 +20,13 @@ class TopThehangsa extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              SizedBox(
-                height: 40,
+              Container(
+                color: const Color(0xFF2F2F2F),
+                child: const SizedBox(
+                  height: 40,
+                ),
               ),
             ],
           ),
