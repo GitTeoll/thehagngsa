@@ -43,6 +43,9 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
           controller: _tabController,
           children:  const [
             HomeScreen(),
+            Center(child: Text('hi'),),
+            Center(child: Text('hi'),),
+            Center(child: Text('hi'),),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
