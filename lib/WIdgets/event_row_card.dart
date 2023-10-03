@@ -33,8 +33,8 @@ class RowEventCard extends StatelessWidget {
                     width: 76,
                     height: 76,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(img), fit: BoxFit.cover),
+                        image: const DecorationImage(
+                            image: AssetImage('assets/images/major.jpg'), fit: BoxFit.cover),
                         color: const Color(0xFFD9D9D9),
                         borderRadius: BorderRadius.circular(10)),
                   ),

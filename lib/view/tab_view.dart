@@ -36,13 +36,12 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         backgroundColor: const Color(0xFFF8F8F8),
         body: TabBarView(
           physics: const NeverScrollableScrollPhysics(),
           controller: _tabController,
-          children: const [
+          children:  const [
             HomeScreen(),
           ],
         ),
@@ -50,7 +49,7 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
           currentIndex: _index,
           showUnselectedLabels: true,
           onTap: (int index) {
-            _tabController.animateTo(index);
+            _tabController.animateTo(_index);
           },
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
@@ -76,7 +75,7 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
           unselectedLabelStyle: const TextStyle(fontSize: 12),
           type: BottomNavigationBarType.fixed,
         ),
-      ),
-    );
+      );
+    
   }
 }
