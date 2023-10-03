@@ -92,5 +92,8 @@ flutter:
     - family: ChangwonDangamAsac
       fonts:
         - asset: assets/fonts/ChangwonDangamAsac-Bold_0712.ttf
+    - family : Pretendard
+      fonts:
+        - asset : assets/fonts/PretendardVariable.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

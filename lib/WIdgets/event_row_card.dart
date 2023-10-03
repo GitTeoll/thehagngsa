@@ -55,7 +55,8 @@ class RowEventCard extends StatelessWidget {
                                   style: const TextStyle(
                                       color: Color(0xFF1F1F21),
                                       fontSize: 15,
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: 'Pretendard'),
                                 )
                               ],
                             ),
@@ -69,7 +70,8 @@ class RowEventCard extends StatelessWidget {
                                   style: const TextStyle(
                                       color: Color(0xFF3E3E40),
                                       fontSize: 13,
-                                      fontWeight: FontWeight.w600),
+                                      fontWeight: FontWeight.w600,
+                                      fontFamily: 'Pretendard'),
                                 )
                               ],
                             ),

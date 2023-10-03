@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const SingleChildScrollView(
           child: Column(
+            
             children: [
               TopThehangsa(),
               Padding(
@@ -33,7 +34,9 @@ class HomeScreen extends StatelessWidget {
                             style: TextStyle(
                                 color: Color(0xFF1F1F21),
                                 fontSize: 17,
-                                fontWeight: FontWeight.w700),
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'Pretendard',
+                                ),
                           )
                         ],
                       ),

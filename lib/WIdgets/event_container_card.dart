@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 class EventContCard extends StatelessWidget {
-  final String eventName, price, img;
-  final double textwidth, textheight;
+  final String eventName;
+  final String price;
+  final String img;
+  final double textwidth;
+  final double textheight;
 
   const EventContCard({
     super.key,
@@ -46,7 +49,8 @@ class EventContCard extends StatelessWidget {
                       style: const TextStyle(
                           color: Color(0xFFF4F8FF),
                           fontSize: 16,
-                          fontWeight: FontWeight.w700),
+                          fontWeight: FontWeight.w700,
+                          fontFamily: 'Pretendard'),
                     ),
                   ),
                 )
@@ -72,6 +76,7 @@ class EventContCard extends StatelessWidget {
                         color: Color(0xFFF1F1F1),
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
+                        fontFamily: 'Pretendard',
                       ),
                     ),
                   ),
