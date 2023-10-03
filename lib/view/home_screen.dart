@@ -1,19 +1,14 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 
-import 'widgets/event_row_card.dart';
-import 'widgets/event_widget.dart';
-import 'widgets/top_thehangsa.dart';
+import '../WIdgets/event_widget.dart';
+import '../WIdgets/top_thehangsa.dart';
+import '../widgets/event_row_card.dart';
 
-void main() {
-  runApp(MyApp());
-}
+// ignore: must_be_immutable
+class HomeScreen extends StatelessWidget {
+   HomeScreen({super.key});
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
-  int _currentIndex = 0; // 현재 선택된 탭 인덱스
+    int _currentIndex = 0; // 현재 선택된 탭 인덱스
 
   // 탭이 선택될 때 호출되는 함수
   void _onTabTapped(int index) {
@@ -21,10 +16,10 @@ class MyApp extends StatelessWidget {
     _currentIndex = index;
   }
 
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return  Scaffold(
         backgroundColor: const Color(0xFFF8F8F8),
         body: const SingleChildScrollView(
           child: Column(
@@ -106,7 +101,7 @@ class MyApp extends StatelessWidget {
           unselectedLabelStyle: const TextStyle(fontSize: 12),
           type: BottomNavigationBarType.fixed, // 고정 크기 사용
         ),
-      ),
-    );
+      );
+    
   }
 }
