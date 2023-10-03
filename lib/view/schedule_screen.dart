@@ -1,30 +1,16 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 
-import 'widgets/event_row_card.dart';
+import '../widgets/event_row_card.dart';
 
-void main() {
-  runApp(MyApp());
-}
+class ScheduleScreen extends StatelessWidget {
+  
+  const ScheduleScreen({super.key});
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
-  int _currentIndex = 1; // 현재 선택된 탭 인덱스
-
-  // 탭이 선택될 때 호출되는 함수
-  void _onTabTapped(int index) {
-    // 탭이 선택되면 _currentIndex를 업데이트하여 현재 선택된 탭을 변경합니다.
-    _currentIndex = index;
-  }
+  
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: const Color(0xFFF8F8F8),
-        body: const SingleChildScrollView(
+    return const SingleChildScrollView(
           child: Column(
             children: [
               SizedBox(
@@ -72,38 +58,6 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
-        ),
-
-        // BottomNavigationBar 추가
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          showUnselectedLabels: true,
-          onTap: _onTabTapped,
-          selectedItemColor: Colors.black,
-          unselectedItemColor: Colors.grey,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: '홈',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today_outlined),
-              label: '스케쥴',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.chat_outlined),
-              label: '채팅',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person_2_outlined),
-              label: 'My',
-            ),
-          ],
-          selectedLabelStyle: const TextStyle(fontSize: 12),
-          unselectedLabelStyle: const TextStyle(fontSize: 12),
-          type: BottomNavigationBarType.fixed,
-        ),
-      ),
-    );
+        );
   }
 }

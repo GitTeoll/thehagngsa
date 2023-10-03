@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thehangsa/view/schedule_screen.dart';
 import 'home_screen.dart';
 
 class TabView extends StatefulWidget {
@@ -43,7 +44,7 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
           controller: _tabController,
           children:  const [
             HomeScreen(),
-            Center(child: Text('hi'),),
+            ScheduleScreen(),
             Center(child: Text('hi'),),
             Center(child: Text('hi'),),
           ],
@@ -52,7 +53,7 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
           currentIndex: _index,
           showUnselectedLabels: true,
           onTap: (int index) {
-            _tabController.animateTo(_index);
+            _tabController.animateTo(index);
           },
           selectedItemColor: Colors.black,
           unselectedItemColor: Colors.grey,
