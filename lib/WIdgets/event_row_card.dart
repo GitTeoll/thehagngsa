@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 
 class RowEventCard extends StatelessWidget {
-  final String img, eventname, price;
+  final String img;
+  final String eventname;
+  final String price;
 
   const RowEventCard({
     Key? key, // Add Key? key parameter
@@ -33,8 +35,8 @@ class RowEventCard extends StatelessWidget {
                     width: 76,
                     height: 76,
                     decoration: BoxDecoration(
-                        image: const DecorationImage(
-                            image: AssetImage('assets/images/major.jpg'), fit: BoxFit.cover),
+                        image: DecorationImage(
+                            image: AssetImage(img), fit: BoxFit.cover),
                         color: const Color(0xFFD9D9D9),
                         borderRadius: BorderRadius.circular(10)),
                   ),
