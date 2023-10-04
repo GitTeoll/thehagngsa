@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../const/colors.dart';
+
 class EventContCard extends StatelessWidget {
   final String eventName;
   final String price;
@@ -28,7 +30,7 @@ class EventContCard extends StatelessWidget {
             image: AssetImage(img),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.3), // 어둡게 만들려는 색상 및 투명도 조절
+              cEventContainerCardColor, // 어둡게 만들려는 색상 및 투명도 조절
               BlendMode.darken, // 어둡게 만들기 모드 (다른 모드를 시도할 수도 있음)
             ),
           ),
@@ -47,7 +49,7 @@ class EventContCard extends StatelessWidget {
                     child: Text(
                       eventName,
                       style: const TextStyle(
-                        color: Color(0xFFF4F8FF),
+                        color: cEventContainerCardEventText,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
                         fontFamily: 'Pretendard',
@@ -64,7 +66,7 @@ class EventContCard extends StatelessWidget {
                   width: 72,
                   height: 34,
                   decoration: const BoxDecoration(
-                    color: Color(0xFF222222),
+                    color: cEventContainerCardPriceColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(10.0),
                       bottomRight: Radius.circular(10.0),
@@ -74,7 +76,7 @@ class EventContCard extends StatelessWidget {
                     child: Text(
                       price,
                       style: const TextStyle(
-                        color: Color(0xFFF1F1F1),
+                        color: cEventContainerCardPriceText,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
                         fontFamily: 'Pretendard',

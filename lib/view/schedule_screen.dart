@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../const/colors.dart';
 import '../widgets/event_row_card.dart';
 
 class ScheduleScreen extends StatelessWidget {
@@ -23,7 +24,7 @@ class ScheduleScreen extends StatelessWidget {
               Text(
                 "예약된 세트",
                 style: TextStyle(
-                  color: Color(0xFF1F1F21),
+                  color: cMainTextColor,
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thehangsa/view/schedule_screen.dart';
+import '../const/colors.dart';
 import 'home_screen.dart';
 
 class TabView extends StatefulWidget {
@@ -24,9 +25,11 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
   }
 
   void tabListener() {
-    setState(() {
-      _index = _tabController.index;
-    });
+    setState(
+      () {
+        _index = _tabController.index;
+      },
+    );
   }
 
   @override
@@ -39,7 +42,7 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8F8F8),
+      backgroundColor: cMainBacgroundColor,
       body: TabBarView(
         physics: const NeverScrollableScrollPhysics(),
         controller: _tabController,
@@ -60,8 +63,8 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
         onTap: (int index) {
           _tabController.animateTo(index);
         },
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor: cTabViewSelectedColor,
+        unselectedItemColor: cTabViewUnselectedColor,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
