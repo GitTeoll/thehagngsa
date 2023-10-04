@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../const/colors.dart';
+import '../const/fonts.dart';
 
 class TopThehangsa extends StatelessWidget {
   const TopThehangsa({
@@ -39,7 +40,7 @@ class TopThehangsa extends StatelessWidget {
                 style: TextStyle(
                   color: cThehangsaTextColor,
                   fontSize: 24,
-                  fontFamily: 'ChangwonDangamAsac',
+                  fontFamily: sTitleTextStyle,
                 ),
               ),
             ],
@@ -65,7 +66,7 @@ class TopThehangsa extends StatelessWidget {
                     style: TextStyle(
                       color: cHighlightTextColor,
                       fontSize: 13,
-                      fontFamily: 'Pretendard',
+                      fontFamily: sMainTextStyle,
                     ),
                   ),
                   SizedBox(
@@ -76,7 +77,7 @@ class TopThehangsa extends StatelessWidget {
                     style: TextStyle(
                       color: cTopInfoTextColor,
                       fontSize: 13,
-                      fontFamily: 'Pretendard',
+                      fontFamily: sMainTextStyle,
                     ),
                   ),
                 ],

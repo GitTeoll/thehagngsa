@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../const/colors.dart';
+import '../const/fonts.dart';
 
 class EventWidget extends StatelessWidget {
   const EventWidget({Key? key}) : super(key: key);
@@ -25,7 +26,7 @@ class EventWidget extends StatelessWidget {
                     color: cEventWidgetSecondaryTextColor,
                     fontWeight: FontWeight.w600,
                     fontSize: 12,
-                    fontFamily: 'Pretendard',
+                    fontFamily: sMainTextStyle,
                   ),
                 )
               ],
@@ -43,7 +44,7 @@ class EventWidget extends StatelessWidget {
                     style: TextStyle(
                       color: cMainTextColorWhite,
                       fontSize: 20,
-                      fontFamily: 'Pretendard',
+                      fontFamily: sMainTextStyle,
                     ),
                   ),
                 )

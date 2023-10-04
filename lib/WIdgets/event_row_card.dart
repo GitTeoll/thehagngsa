@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import '../const/colors.dart';
+import '../const/fonts.dart';
 
 class RowEventCard extends StatelessWidget {
   final String img;
@@ -59,7 +60,7 @@ class RowEventCard extends StatelessWidget {
                                     color: cMainTextColor,
                                     fontSize: 15,
                                     fontWeight: FontWeight.w700,
-                                    fontFamily: 'Pretendard',
+                                    fontFamily: sMainTextStyle,
                                   ),
                                 )
                               ],
@@ -75,7 +76,7 @@ class RowEventCard extends StatelessWidget {
                                     color: cEventRowCardPriceText,
                                     fontSize: 13,
                                     fontWeight: FontWeight.w600,
-                                    fontFamily: 'Pretendard',
+                                    fontFamily: sMainTextStyle,
                                   ),
                                 )
                               ],

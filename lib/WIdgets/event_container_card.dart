@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../const/colors.dart';
+import '../const/fonts.dart';
 
 class EventContCard extends StatelessWidget {
   final String eventName;
@@ -52,7 +53,7 @@ class EventContCard extends StatelessWidget {
                         color: cEventContainerCardEventText,
                         fontSize: 16,
                         fontWeight: FontWeight.w700,
-                        fontFamily: 'Pretendard',
+                        fontFamily: sMainTextStyle,
                       ),
                     ),
                   ),
@@ -79,7 +80,7 @@ class EventContCard extends StatelessWidget {
                         color: cEventContainerCardPriceText,
                         fontSize: 12,
                         fontWeight: FontWeight.w600,
-                        fontFamily: 'Pretendard',
+                        fontFamily: sMainTextStyle,
                       ),
                     ),
                   ),

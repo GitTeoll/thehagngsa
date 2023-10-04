@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../WIdgets/event_widget.dart';
 import '../WIdgets/top_thehangsa.dart';
 import '../const/colors.dart';
+import '../const/fonts.dart';
 import '../widgets/event_row_card.dart';
 
 // ignore: must_be_immutable
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                           color: cMainTextColor,
                           fontSize: 17,
                           fontWeight: FontWeight.w700,
-                          fontFamily: 'Pretendard',
+                          fontFamily: sMainTextStyle,
                         ),
                       )
                     ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../const/colors.dart';
+import '../const/fonts.dart';
 import '../widgets/event_row_card.dart';
 
 class ScheduleScreen extends StatelessWidget {
@@ -27,6 +28,7 @@ class ScheduleScreen extends StatelessWidget {
                   color: cMainTextColor,
                   fontSize: 15,
                   fontWeight: FontWeight.w700,
+                  fontFamily: sMainTextStyle,
                 ),
               ),
               SizedBox()
