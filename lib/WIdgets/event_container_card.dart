@@ -47,10 +47,11 @@ class EventContCard extends StatelessWidget {
                     child: Text(
                       eventName,
                       style: const TextStyle(
-                          color: Color(0xFFF4F8FF),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                          fontFamily: 'Pretendard'),
+                        color: Color(0xFFF4F8FF),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        fontFamily: 'Pretendard',
+                      ),
                     ),
                   ),
                 )

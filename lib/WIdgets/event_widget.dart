@@ -8,8 +8,9 @@ class EventWidget extends StatelessWidget {
     return Container(
       height: 200,
       decoration: BoxDecoration(
-          color: const Color(0xFF83D0AB),
-          borderRadius: BorderRadius.circular(30)),
+        color: const Color(0xFF83D0AB),
+        borderRadius: BorderRadius.circular(30),
+      ),
       child: Padding(
         padding: const EdgeInsets.fromLTRB(32, 32, 32, 10),
         child: Column(
@@ -19,10 +20,11 @@ class EventWidget extends StatelessWidget {
                 Text(
                   " 더행사 첫 이벤트",
                   style: TextStyle(
-                      color: Color(0xFFD9FCE1),
-                      fontWeight: FontWeight.w600,
-                      fontSize: 12,
-                      fontFamily: 'Pretendard'),
+                    color: Color(0xFFD9FCE1),
+                    fontWeight: FontWeight.w600,
+                    fontSize: 12,
+                    fontFamily: 'Pretendard',
+                  ),
                 )
               ],
             ),
@@ -36,7 +38,11 @@ class EventWidget extends StatelessWidget {
                   height: 68,
                   child: Text(
                     "신규가입 10% 할인쿠폰 증정 이벤트",
-                    style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 20,fontFamily: 'Pretendard'),
+                    style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 20,
+                      fontFamily: 'Pretendard',
+                    ),
                   ),
                 )
               ],

@@ -35,9 +35,10 @@ class TopThehangsa extends StatelessWidget {
               Text(
                 "더행사",
                 style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontFamily: 'ChangwonDangamAsac'),
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontFamily: 'ChangwonDangamAsac',
+                ),
               ),
             ],
           ),
@@ -59,8 +60,11 @@ class TopThehangsa extends StatelessWidget {
                 children: [
                   Text(
                     "공지",
-                    style: TextStyle(color: Color(0xFFB6FFCB), fontSize: 13,
-                    fontFamily: 'Pretendard'),
+                    style: TextStyle(
+                      color: Color(0xFFB6FFCB),
+                      fontSize: 13,
+                      fontFamily: 'Pretendard',
+                    ),
                   ),
                   SizedBox(
                     width: 15,
@@ -70,7 +74,7 @@ class TopThehangsa extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 13,
-                      fontFamily: 'Pretendard'
+                      fontFamily: 'Pretendard',
                     ),
                   ),
                 ],

@@ -35,10 +35,11 @@ class RowEventCard extends StatelessWidget {
                     width: 76,
                     height: 76,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(img), fit: BoxFit.cover),
-                        color: const Color(0xFFD9D9D9),
-                        borderRadius: BorderRadius.circular(10)),
+                      image: DecorationImage(
+                          image: AssetImage(img), fit: BoxFit.cover),
+                      color: const Color(0xFFD9D9D9),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
@@ -53,10 +54,11 @@ class RowEventCard extends StatelessWidget {
                                 Text(
                                   eventname,
                                   style: const TextStyle(
-                                      color: Color(0xFF1F1F21),
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w700,
-                                      fontFamily: 'Pretendard'),
+                                    color: Color(0xFF1F1F21),
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w700,
+                                    fontFamily: 'Pretendard',
+                                  ),
                                 )
                               ],
                             ),
@@ -68,10 +70,11 @@ class RowEventCard extends StatelessWidget {
                                 Text(
                                   price,
                                   style: const TextStyle(
-                                      color: Color(0xFF3E3E40),
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w600,
-                                      fontFamily: 'Pretendard'),
+                                    color: Color(0xFF3E3E40),
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Pretendard',
+                                  ),
                                 )
                               ],
                             ),
@@ -87,7 +90,11 @@ class RowEventCard extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [Icon(Icons.arrow_forward_ios_rounded)],
+                children: [
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                  ),
+                ],
               ),
             ),
           ],
