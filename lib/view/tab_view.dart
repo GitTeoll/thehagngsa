@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:thehangsa/view/schedule_screen.dart';
 import '../const/colors.dart';
+import '../const/fonts.dart';
 import 'home_screen.dart';
 
 class TabView extends StatefulWidget {
@@ -65,6 +66,14 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
         },
         selectedItemColor: cTabViewSelectedColor,
         unselectedItemColor: cTabViewUnselectedColor,
+        selectedLabelStyle: const TextStyle(
+          fontFamily: sMainTextStyle,
+          fontSize: 12,
+        ),
+        unselectedLabelStyle: const TextStyle(
+          fontFamily: sMainTextStyle,
+          fontSize: 12,
+        ),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -83,8 +92,6 @@ class _TabViewState extends State<TabView> with SingleTickerProviderStateMixin {
             label: 'My',
           ),
         ],
-        selectedLabelStyle: const TextStyle(fontSize: 12),
-        unselectedLabelStyle: const TextStyle(fontSize: 12),
         type: BottomNavigationBarType.fixed,
       ),
     );
